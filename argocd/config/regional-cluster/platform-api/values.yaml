@@ -20,8 +20,8 @@ platformApi:
   app:
     name: platform-api
     image:
-      repository: quay.io/redhat-user-workloads/rosa-tenant/rosa-seaplane-api
-      tag: "aa468081b3e0148fccfb173dbf94a973da572ecf@sha256:d91bb7ebe19f6a7eaf23a65106704670e771bb074d8ec46f719dcea789f7ede9"
+      repository: quay.io/gbranco_openshift/rosa-hyperfleet-api
+      tag: "3cfbe398"
       pullPolicy: Always
 
     # Application arguments
@@ -168,8 +168,8 @@ seaplane:
   project: default
 
   source:
-    repoURL: https://github.com/openshift-online/rosa-seaplane-api.git
-    targetRevision: cc51c40da14cba95daf2f7ae64c01950a7a02a10
+    repoURL: https://github.com/gdbranco/rosa-seaplane-api.git
+    targetRevision: 3cfbe398d9ea8ed2970c1440dbf4764bdf03f686
     path: seaplane-api/charts
 
   syncPolicy:
